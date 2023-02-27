@@ -1,11 +1,11 @@
-local status, n = pcall(require, 'catppuccin')
-if (not status) then return end
+-- local status, n = pcall(require, 'catppuccin')
+-- if (not status) then return end
+--
+-- n.setup({
+--   flavour = 'mocha',
+--   styles = {
+--     conditionals = {},
+--   }
+-- })
 
-n.setup({
-  flavour = 'mocha',
-  styles = {
-    conditionals = {},
-  }
-})
-
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "night-owl"

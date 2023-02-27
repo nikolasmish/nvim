@@ -2,13 +2,13 @@ local status, packer = pcall(require, 'packer')
 if (not status) then
   print("Packer not installed")
   return
-end 
+end
 
 vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use 'haishanh/night-owl.vim'
   use 'kyazdani42/nvim-web-devicons'
   use 'L3MON4D3/LuaSnip'
   use 'hoob3rt/lualine.nvim' -- Statusline
