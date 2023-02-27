@@ -3,7 +3,8 @@ if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
 
-local on_attach = function(bufnr, client)
+---@diagnostic disable-next-line: unused-local
+local on_attach = function(client, bufnr)
   if client.server_capabilities.documentFormattingProvider then
     vim.api.nvim_command [[augroup Format]]
     vim.api.nvim_command [[autocmd! * <buffer>]]

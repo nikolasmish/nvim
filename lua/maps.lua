@@ -5,6 +5,10 @@ vim.g.mapleader = " "
 -- Escape inser with jk
 keymap.set('i', 'jk', '<Esc>')
 
+-- Remove macros
+keymap.set('n', 'Q', '<nop>')
+keymap.set('n', 'q', '<nop>')
+
 -- Dont yank with x
 keymap.set('n', 'x', '"_x')
 
@@ -56,3 +60,18 @@ keymap.set('n', '<leader>fe', '<cmd>NvimTreeFindFile<cr>')
 
 -- Open new shell in current directory
 keymap.set('n', '<leader>sh', '<cmd>!wt -w 0 nt -d \\%CD\\%<cr><cr>')
+
+-- Move lines up and down
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
+-- Move viewport up and down and center to screen
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Select and replace, epic
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
