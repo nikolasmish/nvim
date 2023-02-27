@@ -17,17 +17,16 @@ dashboard.setup {
         key = 'f',
       },
       {
-        desc = ' Apps',
-        group = 'DiagnosticHint',
-        action = 'Telescope app',
-        key = 'a',
+        desc = ' Session',
+        action = 'SearchSession',
+        key = 's',
       },
-      {
-        desc = ' dotfiles',
-        group = 'Number',
-        action = 'Telescope dotfiles',
-        key = 'd',
-      },
+      -- {
+      --   desc = ' dotfiles',
+      --   group = 'Number',
+      --   action = 'Telescope dotfiles',
+      --   key = 'd',
+      -- },
     },
   },
 }

@@ -49,4 +49,8 @@ packer.startup(function(use)
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
+
+  -- Session manager
+  use 'rmagatti/auto-session'
+  use 'rmagatti/session-lens'
 end)
