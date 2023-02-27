@@ -25,10 +25,12 @@ vim.opt.ai = true
 vim.opt.si = true
 vim.opt.wrap = false
 vim.opt.backspace = 'start,eol,indent'
-vim.opt.path:append {'**'}
-vim.opt.wildignore:append { '*/node_modules/*'}
+vim.opt.path:append { '**' }
+vim.opt.wildignore:append { '*/node_modules/*' }
+vim.opt.swapfile = false
+vim.opt.scrolloff = 8
 
-vim.api.nvim_create_autocmd("InsertLeave" , {
+vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
   command = "set nopaste"
 })
