@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    loaded = true,
-    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -98,6 +93,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["lazygit.nvim"] = {
     loaded = true,
@@ -118,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/hoob3rt/lualine.nvim"
+  },
+  ["night-owl.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\night-owl.vim",
+    url = "https://github.com/haishanh/night-owl.vim"
   },
   ["null-ls.nvim"] = {
     loaded = true,

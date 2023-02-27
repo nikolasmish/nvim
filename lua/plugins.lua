@@ -47,4 +47,6 @@ packer.startup(function(use)
   -- comments
   use 'numToStr/Comment.nvim'
 
+  -- Startup screen
+  use 'glepnir/dashboard-nvim'
 end)
