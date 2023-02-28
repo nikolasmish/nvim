@@ -62,8 +62,10 @@ keymap.set('n', '<leader>fe', '<cmd>NvimTreeFindFile<cr>')
 keymap.set('n', '<leader>sh', '<cmd>!wt -w 0 nt -d \\%CD\\%<cr><cr>')
 
 -- Move lines up and down
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<M-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("n", "<M-k>", "<cmd>move -2<CR>")
+vim.keymap.set("n", "<M-j>", "<cmd>move +1<CR>")
 
 -- Move viewport up and down and center to screen
 vim.keymap.set("n", "J", "mzJ`z")

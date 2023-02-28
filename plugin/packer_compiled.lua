@@ -74,15 +74,15 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["auto-session"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-session",
+    url = "https://github.com/rmagatti/auto-session"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
@@ -188,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["session-lens"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\session-lens",
+    url = "https://github.com/rmagatti/session-lens"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,

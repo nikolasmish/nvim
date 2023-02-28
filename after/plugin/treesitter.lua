@@ -12,11 +12,15 @@ ts.setup {
   },
   ensure_installed = {
     'markdown',
+    'markdown_inline',
     'tsx',
     'lua',
     'json',
     'css',
     'html',
+  },
+  context_commentstring = {
+    enable = true
   },
   autotag = {
     enable = true

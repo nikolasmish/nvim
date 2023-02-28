@@ -44,8 +44,8 @@ packer.startup(function(use)
   -- LazyGit
   use 'kdheepak/lazygit.nvim'
 
-  -- comments
-  use 'numToStr/Comment.nvim'
+  -- Comments
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Startup screen
   use 'glepnir/dashboard-nvim'
@@ -53,4 +53,8 @@ packer.startup(function(use)
   -- Session manager
   use 'rmagatti/auto-session'
   use 'rmagatti/session-lens'
+
+  -- Better f t
+  use 'ggandor/leap.nvim'
+  use 'ggandor/flit.nvim'
 end)
