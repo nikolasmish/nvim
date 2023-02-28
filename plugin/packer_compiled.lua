@@ -99,10 +99,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  ["flit.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\flit.nvim",
+    url = "https://github.com/ggandor/flit.nvim"
+  },
+  ["import-cost.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\import-cost.nvim",
+    url = "https://github.com/barrett-ruth/import-cost.nvim"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
+  },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -183,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["palenightfall.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\palenightfall.nvim",
+    url = "https://github.com/JoosepAlviste/palenightfall.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,

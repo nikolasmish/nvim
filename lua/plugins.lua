@@ -8,6 +8,7 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'JoosepAlviste/palenightfall.nvim'
   use 'haishanh/night-owl.vim'
   use 'kyazdani42/nvim-web-devicons'
   use 'L3MON4D3/LuaSnip'
