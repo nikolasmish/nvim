@@ -7,7 +7,6 @@ keymap.set('i', 'jk', '<Esc>')
 
 -- Remove macros
 keymap.set('n', 'Q', '<nop>')
-keymap.set('n', 'q', '<nop>')
 
 -- Dont yank with x
 keymap.set('n', 'x', '"_x')

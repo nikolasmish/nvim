@@ -1,32 +1,33 @@
 local status, dashboard = pcall(require, 'dashboard')
 if (not status) then return end
 
+local test = ''
+
 dashboard.setup {
   config = {
-    week_header = {
-      enable = true,
-    },
+    header = {},
     shortcut = {
-      { desc = ' Update', group = '@property', action = 'PackerSync', key = 'u' },
+      { desc = ' PackerSync', group = 'Error', action = 'PackerSync', key = 'u' },
       {
-        icon = ' ',
+        icon = ' ',
+        group = 'Question',
         icon_hl = '@variable',
         desc = 'Files',
-        group = 'Label',
         action = 'Telescope find_files',
         key = 'f',
       },
       {
-        desc = ' Session',
+        icon = ' ',
+        group = 'Number',
+        desc = 'Sessions',
         action = 'SearchSession',
         key = 's',
       },
-      -- {
-      --   desc = ' dotfiles',
-      --   group = 'Number',
-      --   action = 'Telescope dotfiles',
-      --   key = 'd',
-      -- },
+    },
+    footer = {
+      '',
+      '“Intelligence is the ability to avoid doing work, yet getting the work done.”',
+      '― Linus Torvalds'
     },
   },
 }
