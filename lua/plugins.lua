@@ -58,4 +58,7 @@ packer.startup(function(use)
   -- Better f t
   use 'ggandor/leap.nvim'
   use 'ggandor/flit.nvim'
+
+  -- Auto disable highlight when moving cursor after search
+  use({ "asiryk/auto-hlsearch.nvim", tag = "1.0.0" })
 end)

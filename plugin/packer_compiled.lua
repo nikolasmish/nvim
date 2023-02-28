@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\flit.nvim",
     url = "https://github.com/ggandor/flit.nvim"
   },
-  ["import-cost.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\import-cost.nvim",
-    url = "https://github.com/barrett-ruth/import-cost.nvim"
-  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Smis\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lazygit.nvim",
