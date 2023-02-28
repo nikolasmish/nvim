@@ -11,7 +11,6 @@ packer.startup(function(use)
   use 'JoosepAlviste/palenightfall.nvim'
   use 'haishanh/night-owl.vim'
   use 'kyazdani42/nvim-web-devicons'
-  use 'L3MON4D3/LuaSnip'
   use 'hoob3rt/lualine.nvim' -- Statusline
 
   -- LSP
@@ -21,17 +20,19 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
   use 'neovim/nvim-lspconfig'
+  use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use 'mrjones2014/nvim-ts-rainbow'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/prettier.nvim'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
-  -- Tlescope
+  -- Telescope
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'

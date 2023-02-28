@@ -6,7 +6,7 @@ cmp.setup({
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
-    end 
+    end
   },
   mapping = cmp.mapping.preset.insert({
     ['<CR>'] = cmp.mapping.confirm({
@@ -16,10 +16,12 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'buffer' }
+    { name = 'luasnip' },
+  }, {
+    { name = 'buffer' },
   }),
   formatting = {
-    format = lspkind.cmp_format({ wirth_text = false, maxwidth= 50 })
+    format = lspkind.cmp_format({ wirth_text = false, maxwidth = 50 })
   }
 })
 
