@@ -24,3 +24,5 @@ vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
 
 local codeaction = require("lspsaga.codeaction")
 vim.keymap.set("n", "<leader>ca", function() codeaction:code_action() end, { silent = true })
+vim.keymap.set("n", "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
+vim.keymap.set("t", "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
