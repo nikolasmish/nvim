@@ -28,6 +28,7 @@ packer.startup(function(use)
   use 'mrjones2014/nvim-ts-rainbow'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/prettier.nvim'
+  use 'ThePrimeagen/harpoon'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'

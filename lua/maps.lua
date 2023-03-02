@@ -2,6 +2,8 @@ local keymap = vim.keymap
 
 vim.g.mapleader = " "
 
+keymap.set('n', '<leader><leader>', ':so %<cr>', { silent = true })
+
 -- Escape inser with jk
 keymap.set('i', 'jk', '<Esc>')
 
@@ -30,6 +32,7 @@ keymap.set('n', '<C-s>', '<cmd>w<cr>')
 keymap.set('i', '<C-s>', '<cmd>w<cr>')
 
 -- New tab
+keymap.set('n', '<leader>bd', ':bdelete<cr>', { silent = true })
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
