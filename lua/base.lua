@@ -29,6 +29,7 @@ vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.swapfile = false
 vim.opt.scrolloff = 8
+vim.cmd('set cc=80')
 
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
