@@ -64,4 +64,13 @@ packer.startup(function(use)
 
   -- Auto disable highlight when moving cursor after search
   use({ "asiryk/auto-hlsearch.nvim", tag = "1.0.0" })
+
+  -- Notifications, popups
+  use({
+    "folke/noice.nvim",
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  })
 end)

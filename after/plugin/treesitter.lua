@@ -17,7 +17,10 @@ ts.setup {
     'json',
     'css',
     'html',
-    'help'
+    'help',
+    'vim',
+    'bash',
+    'regex'
   },
   context_commentstring = {
     enable = true
