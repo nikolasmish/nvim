@@ -17,6 +17,7 @@ ts.setup {
     'json',
     'css',
     'html',
+    'help'
   },
   context_commentstring = {
     enable = true
