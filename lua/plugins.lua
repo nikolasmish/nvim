@@ -46,6 +46,7 @@ packer.startup(function(use)
 
   -- LazyGit
   use 'kdheepak/lazygit.nvim'
+  use 'mhinz/vim-signify'
 
   -- Comments
   use 'JoosepAlviste/nvim-ts-context-commentstring'
