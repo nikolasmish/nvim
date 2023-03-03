@@ -76,4 +76,5 @@ packer.startup(function(use)
       "rcarriga/nvim-notify",
     }
   })
+  use "m4xshen/smartcolumn.nvim"
 end)
