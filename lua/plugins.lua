@@ -30,6 +30,8 @@ packer.startup(function(use)
   use 'MunifTanjim/prettier.nvim'
   use 'ThePrimeagen/harpoon'
 
+  use 'RRethy/vim-illuminate'
+
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
@@ -47,6 +49,7 @@ packer.startup(function(use)
   -- LazyGit
   use 'kdheepak/lazygit.nvim'
   use 'mhinz/vim-signify'
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- Comments
   use 'JoosepAlviste/nvim-ts-context-commentstring'

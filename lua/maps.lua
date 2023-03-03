@@ -32,7 +32,8 @@ keymap.set('n', '<C-s>', '<cmd>w<cr>')
 keymap.set('i', '<C-s>', '<cmd>w<cr>')
 
 -- New tab
-keymap.set('n', '<leader>bd', ':bdelete<cr>', { silent = true })
+keymap.set('n', '<leader>bd', '<cmd>bdelete<cr>', { silent = true })
+keymap.set('n', '<leader>td', '<cmd>tabclose<cr>', { silent = true })
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
@@ -55,6 +56,7 @@ keymap.set('n', '<C-down>', '<C-w>-')
 
 -- LazyGit
 keymap.set('n', '<leader>gg', '<cmd>LazyGit<cr>')
+keymap.set('n', '<leader>gd', '<cmd>DiffviewOpen<cr>')
 
 -- Neovim Tree
 keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>')
