@@ -46,10 +46,10 @@ packer.startup(function(use)
   -- Nvim Tree
   use 'nvim-tree/nvim-tree.lua'
 
-  -- LazyGit
+  -- Git
   use 'kdheepak/lazygit.nvim'
-  use 'mhinz/vim-signify'
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use { 'lewis6991/gitsigns.nvim' }
 
   -- Comments
   use 'JoosepAlviste/nvim-ts-context-commentstring'
