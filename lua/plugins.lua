@@ -69,13 +69,6 @@ packer.startup(function(use)
   use({ "asiryk/auto-hlsearch.nvim", tag = "1.0.0" })
 
   -- Notifications, popups, misc
-  use({
-    "folke/noice.nvim",
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    }
-  })
   use "m4xshen/smartcolumn.nvim"
   use "petertriho/nvim-scrollbar"
 end)
