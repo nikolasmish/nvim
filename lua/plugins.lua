@@ -71,4 +71,10 @@ packer.startup(function(use)
   -- Notifications, popups, misc
   use "m4xshen/smartcolumn.nvim"
   use "petertriho/nvim-scrollbar"
+
+  -- Markdown
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 end)

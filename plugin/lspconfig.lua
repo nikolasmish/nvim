@@ -22,7 +22,7 @@ local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 
   --Enable completion triggered by <c-x><c-o>
-  --local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
   --buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Mappings.
@@ -97,6 +97,11 @@ nvim_lsp.lua_ls.setup({
 })
 
 nvim_lsp.astro.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+nvim_lsp.csharp_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
