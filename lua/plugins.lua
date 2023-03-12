@@ -41,6 +41,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'akinsho/nvim-bufferline.lua'
+  use 'echasnovski/mini.bufremove'
   use 'norcalli/nvim-colorizer.lua'
 
   -- Nvim Tree
@@ -71,6 +72,20 @@ packer.startup(function(use)
   -- Notifications, popups, misc
   use "m4xshen/smartcolumn.nvim"
   use "petertriho/nvim-scrollbar"
+  use { 'echasnovski/mini.indentscope', config = function() require('mini.indentscope').setup() end }
+  use "lukas-reineke/indent-blankline.nvim"
+
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
   -- Markdown
   use({
