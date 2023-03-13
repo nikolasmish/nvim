@@ -2,6 +2,10 @@ local keymap = vim.keymap
 
 vim.g.mapleader = " "
 
+-- Better j k
+keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+
 keymap.set('n', '<leader><leader>', ':so %<cr>', { silent = true })
 
 -- Escape inser with jk
@@ -42,6 +46,7 @@ keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>")
 keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>")
 
 --Move Window
+keymap.set('n', '<Space>wd', '<C-W>c')
 keymap.set('n', '<Space>', '<leader>')
 keymap.set('', '<C-h>', '<C-w>h')
 keymap.set('', '<C-k>', '<C-w>k')
@@ -49,7 +54,7 @@ keymap.set('', '<C-j>', '<C-w>j')
 keymap.set('', '<C-l>', '<C-w>l')
 
 -- Close window
-keymap.set('', '<leader>q', '<cmd>q<cr>')
+keymap.set('', '<leader>q', '<cmd>qa<cr>')
 
 -- Resize windows
 keymap.set('n', '<C-left>', '<C-w>>')
