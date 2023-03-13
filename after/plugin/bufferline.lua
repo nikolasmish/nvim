@@ -10,6 +10,14 @@ bufferline.setup({
     diagnostics_indicator = function(count)
       return "(" .. count .. ")"
     end,
+    offsets = {
+      {
+        filetype = 'NvimTree',
+        text = 'File Explorer',
+        text_align = 'center',
+        padding = 1,
+      },
+    },
   },
   highlights = {
     separator_selected = {
