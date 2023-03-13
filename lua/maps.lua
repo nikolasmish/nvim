@@ -40,8 +40,8 @@ keymap.set('n', '<leader>bd', '<cmd>lua require("mini.bufremove").delete(0, fals
 keymap.set('n', '<leader>bD', '<cmd>lua require("mini.bufremove").delete(0, true)<cr>', { silent = true })
 keymap.set('n', '<leader>td', '<cmd>tabclose<cr>', { silent = true })
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
-keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+keymap.set('n', '<leader>-', ':split<Return><C-w>w', { silent = true })
+keymap.set('n', '<leader>|', ':vsplit<Return><C-w>w', { silent = true })
 keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>")
 keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>")
 
@@ -89,4 +89,3 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- Select and replace, epic
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
