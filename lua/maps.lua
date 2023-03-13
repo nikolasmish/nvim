@@ -89,3 +89,4 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- Select and replace, epic
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
