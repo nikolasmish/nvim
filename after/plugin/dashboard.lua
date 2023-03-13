@@ -8,6 +8,7 @@ dashboard.setup {
     header = {},
     shortcut = {
       { desc = ' PackerSync', group = 'Error', action = 'PackerSync', key = 'u' },
+      { desc = ' Config', group = 'Error', action = ':e $MYVIMRC', key = 'c' },
       {
         icon = ' ',
         group = 'Question',

@@ -1,6 +1,6 @@
 local status, packer = pcall(require, 'packer')
 if (not status) then
-  print("Packer not installed")
+  print('Packer not installed')
   return
 end
 
@@ -9,7 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'JoosepAlviste/palenightfall.nvim'
-  use "rebelot/kanagawa.nvim"
+  use 'rebelot/kanagawa.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'hoob3rt/lualine.nvim' -- Statusline
 
@@ -41,6 +41,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'akinsho/nvim-bufferline.lua'
+  use 'echasnovski/mini.bufremove'
   use 'norcalli/nvim-colorizer.lua'
 
   -- Nvim Tree
@@ -66,15 +67,33 @@ packer.startup(function(use)
   use 'ggandor/flit.nvim'
 
   -- Auto disable highlight when moving cursor after search
-  use({ "asiryk/auto-hlsearch.nvim", tag = "1.0.0" })
+  use({ 'asiryk/auto-hlsearch.nvim', tag = '1.0.0' })
 
   -- Notifications, popups, misc
-  use "m4xshen/smartcolumn.nvim"
-  use "petertriho/nvim-scrollbar"
+  use 'm4xshen/smartcolumn.nvim'
+  use 'petertriho/nvim-scrollbar'
+  use { 'echasnovski/mini.indentscope', config = function() require('mini.indentscope').setup() end }
+  use 'echasnovski/mini.pairs'
+  use 'echasnovski/mini.surround'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'windwp/nvim-spectre'
+  use 'stevearc/dressing.nvim'
+
+  use {
+    'folke/todo-comments.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+    config = function()
+      require('todo-comments').setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
   -- Markdown
   use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
   })
 end)

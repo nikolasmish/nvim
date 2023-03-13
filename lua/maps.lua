@@ -32,11 +32,14 @@ keymap.set('n', '<C-s>', '<cmd>w<cr>')
 keymap.set('i', '<C-s>', '<cmd>w<cr>')
 
 -- New tab
-keymap.set('n', '<leader>bd', '<cmd>bdelete<cr>', { silent = true })
+keymap.set('n', '<leader>bd', '<cmd>lua require("mini.bufremove").delete(0, false)<cr>', { silent = true })
+keymap.set('n', '<leader>bD', '<cmd>lua require("mini.bufremove").delete(0, true)<cr>', { silent = true })
 keymap.set('n', '<leader>td', '<cmd>tabclose<cr>', { silent = true })
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>")
+keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>")
 
 --Move Window
 keymap.set('n', '<Space>', '<leader>')
@@ -45,7 +48,7 @@ keymap.set('', '<C-k>', '<C-w>k')
 keymap.set('', '<C-j>', '<C-w>j')
 keymap.set('', '<C-l>', '<C-w>l')
 
--- Close buffer
+-- Close window
 keymap.set('', '<leader>q', '<cmd>q<cr>')
 
 -- Resize windows
