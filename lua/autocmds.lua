@@ -29,3 +29,16 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "q", "<cmd>close<cr>", { buffer = event.buf, silent = true })
   end,
 })
+
+vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+  pattern = 'NvimTree*',
+  callback = function()
+    local view = require('nvim-tree.view')
+    local is_visible = view.is_visible()
+
+    local api = require('nvim-tree.api')
+    if not is_visible then
+      api.tree.open()
+    end
+  end,
+})
