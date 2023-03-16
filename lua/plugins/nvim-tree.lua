@@ -1,5 +1,7 @@
 return {
   'nvim-tree/nvim-tree.lua',
+  cmd = {'NvimTree', 'NvimTreeToggle'},
+  lazy = true,
   opts = {
     filters = {
       exclude = { "/node_modules" }

@@ -1,11 +1,12 @@
 return {
   'glepnir/dashboard-nvim',
+  lazy = true,
   event = "VimEnter",
   opts = {
     config = {
       header = {},
       shortcut = {
-        { desc = ' PackerSync', group = 'Error', action = 'PackerSync', key = 'u' },
+        { desc = ' Lazy', group = 'Error', action = 'Lazy', key = 'l' },
         { desc = ' Config', group = 'Error', action = ':e $MYVIMRC', key = 'c' },
         {
           icon = ' ',

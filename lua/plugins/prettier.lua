@@ -1,5 +1,7 @@
 return {
   'MunifTanjim/prettier.nvim',
+  lazy = true,
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     vin = 'prettierd',
     filetypes = {

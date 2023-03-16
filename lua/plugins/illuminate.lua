@@ -1,5 +1,5 @@
 return {
-  'RRethy/vim-illuminate', 
+  'RRethy/vim-illuminate',
   event = { "BufReadPost", "BufNewFile" },
   opts = {
     providers = {
