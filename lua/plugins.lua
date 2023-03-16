@@ -1,87 +1,60 @@
-local status, packer = pcall(require, 'packer')
-if (not status) then
-  print('Packer not installed')
-  return
-end
-
-vim.cmd [[packadd packer.nvim]]
-
-packer.startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use 'JoosepAlviste/palenightfall.nvim'
-  use 'rebelot/kanagawa.nvim'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'hoob3rt/lualine.nvim' -- Statusline
+return {
+  'wbthomason/packer.nvim',
+  'JoosepAlviste/palenightfall.nvim',
+  'rebelot/kanagawa.nvim',
+  'kyazdani42/nvim-web-devicons',
+  'hoob3rt/lualine.nvim',
 
   -- LSP
-  use 'glepnir/lspsaga.nvim'
-  use 'onsails/lspkind-nvim'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/nvim-cmp'
-  use 'neovim/nvim-lspconfig'
-  use 'L3MON4D3/LuaSnip'
-  use {
+  'glepnir/lspsaga.nvim',
+  'onsails/lspkind-nvim',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/nvim-cmp',
+  'neovim/nvim-lspconfig',
+  'L3MON4D3/LuaSnip',
+  {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
-  use 'mrjones2014/nvim-ts-rainbow'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'MunifTanjim/prettier.nvim'
-  use 'ThePrimeagen/harpoon'
+    build = ':TSUpdate'
+  },
+  { 'mrjones2014/nvim-ts-rainbow', event = { "BufReadPost", "BufNewFile" } },
+  'jose-elias-alvarez/null-ls.nvim',
+  'MunifTanjim/prettier.nvim',
+  'ThePrimeagen/harpoon',
 
-  use 'RRethy/vim-illuminate'
+  'RRethy/vim-illuminate',
 
-  use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
+  'windwp/nvim-autopairs',
+  'windwp/nvim-ts-autotag',
 
   -- Telescope
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-file-browser.nvim'
+  'nvim-lua/plenary.nvim',
+  'nvim-telescope/telescope.nvim',
+  'nvim-telescope/telescope-file-browser.nvim',
 
-  use 'akinsho/nvim-bufferline.lua'
-  use 'echasnovski/mini.bufremove'
-  use 'norcalli/nvim-colorizer.lua'
-
-  -- Nvim Tree
-  use 'nvim-tree/nvim-tree.lua'
+  'akinsho/bufferline.nvim',
+  'echasnovski/mini.bufremove',
 
   -- Git
-  use 'kdheepak/lazygit.nvim'
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
-  use { 'lewis6991/gitsigns.nvim' }
-
+  'kdheepak/lazygit.nvim',
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
   -- Comments
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
-
-  -- Startup screen
-  use 'glepnir/dashboard-nvim'
-
-  -- Session manager
-  use 'rmagatti/auto-session'
-  use 'rmagatti/session-lens'
+  'JoosepAlviste/nvim-ts-context-commentstring',
 
   -- Better f t
-  use 'ggandor/leap.nvim'
-  use 'ggandor/flit.nvim'
+  'ggandor/leap.nvim',
+  'ggandor/flit.nvim',
 
-  -- Auto disable highlight when moving cursor after search
-  use({ 'asiryk/auto-hlsearch.nvim', tag = '1.0.0' })
 
   -- Notifications, popups, misc
-  use 'm4xshen/smartcolumn.nvim'
-  use 'petertriho/nvim-scrollbar'
-  use { 'echasnovski/mini.indentscope', config = function() require('mini.indentscope').setup() end }
-  use 'echasnovski/mini.pairs'
-  use 'echasnovski/mini.surround'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'windwp/nvim-spectre'
-  use 'stevearc/dressing.nvim'
+  { 'echasnovski/mini.indentscope', config = function() require('mini.indentscope').setup() end },
+  'lukas-reineke/indent-blankline.nvim',
+  'stevearc/dressing.nvim',
 
-  use {
+  {
     'folke/todo-comments.nvim',
     requires = 'nvim-lua/plenary.nvim',
+    event = { "BufReadPost", "BufNewFile" },
     config = function()
       require('todo-comments').setup {
         -- your configuration comes here
@@ -89,11 +62,11 @@ packer.startup(function(use)
         -- refer to the configuration section below
       }
     end
-  }
+  },
 
   -- Markdown
-  use({
+  {
     'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-  })
-end)
+    build = function() vim.fn['mkdp#util#install']() end,
+  }
+}
