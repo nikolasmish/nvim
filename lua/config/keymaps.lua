@@ -23,7 +23,7 @@ map("n", "x", '"_x', { silent = true })
 -- select all
 map("n", "<C-a>", "gg<S-V>G", { silent = true })
 -- open new shell
-map("n", ";sh", "<cmd>!wt -w 0 nt -d \\%CD\\%<cr><cr>", { silent = true })
+map("n", ";sh", "<cmd>!wt -w 0 nt -d \\%CD\\%<cr>", { silent = true })
 -- center screen on cursor
 map("n", "<C-d>", "<C-d>zz", { silent = true })
 map("n", "<C-u>", "<C-u>zz", { silent = true })
