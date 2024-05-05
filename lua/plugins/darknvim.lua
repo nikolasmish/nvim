@@ -4,14 +4,11 @@ return {
     name = "gruvbox-material",
   },
   {
-    "rebelot/kanagawa.nvim",
-    name = "kanagawa",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-  },
-  {
-    "Shatur/neovim-ayu",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "rose-pine/neovim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd("colorscheme rose-pine-moon") -- OR vim.cmd("colorscheme shin")
+    end,
   },
 }
